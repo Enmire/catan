@@ -5,13 +5,10 @@ import java.awt.*;
 public class Constants
 {
     // Player names.
-    public static int PLAYER_ONE = 0;
-    public static int PLAYER_TWO = 1;
-    public static int PLAYER_THREE = 2;
-    public static int PLAYER_FOUR = 3;
-    public static int PLAYER_FIVE = 4;
-    public static int PLAYER_SIX = 5;
-    public static int MAX_PLAYERS = 6;
+    public enum Player
+    {
+        ONE, TWO, THREE, FOUR, FIVE, SIX
+    }
 
     // Colors.
     public static Color RED = new Color(153, 0, 0);
@@ -22,19 +19,19 @@ public class Constants
     public static Color GREEN = new Color(0, 102, 0);
 
     // Resource types.
-    public static int WOOD = 0;
-    public static int BRICK = 1;
-    public static int SHEEP = 2;
-    public static int WHEAT = 3;
-    public static int ORE = 4;
+    public enum Resource
+    {
+        WOOD, BRICK, SHEEP, WHEAT, ORE
+    }
+
+    public enum Commodity
+    {
+        PAPER, CLOTH, COIN
+    }
 
     // Tile types.
-    public static int FOREST = 0;
-    public static int QUARRY = 1;
-    public static int PASTURE = 2;
-    public static int FIELD = 3;
-    public static int MOUNTAIN = 4;
-    public static int DESERT = 5;
-    public static int SEA = 6;
-    public static int GOLD = 7;
+    public enum Tile
+    {
+        FOREST, QUARRY, PASTURE, FIELD, MOUNTAIN, DESERT, SEA, GOLD
+    }
 }
