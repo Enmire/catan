@@ -16,12 +16,4 @@ public class Player
         this.points = points;
         this.hand = hand;
     }
-
-    public Player()
-    {
-        this.name = null;
-        this.color = null;
-        this.points = 0;
-        this.hand = null;
-    }
 }
